@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mdiv{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,rgba(185, 127, 51, 0.527),rgba(136, 216, 89, 0.527),rgba(21, 37, 177, 0.527));
+}
+.to_do_list{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-image: linear-gradient(to right,rgb(238, 219, 225),rgb(230, 161, 183));
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px;
+}
+h1{
+    padding: 25px;
+    padding-left: 30px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(177, 10, 243);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Rubik Glitch', ; */
+}
+.form{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 20px;
+    top: 100px;
+}
+div form input{
+    height: 40px;
+    width: 350px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,rgb(150, 245, 237),rgb(197, 247, 244));
+    padding-left: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+div form button{
+    position: absolute;
+    height: 40px;
+    width: 90px;
+    right: 31px;
+    border-radius: 20px;
+    background-color: rgb(228, 69, 69);
+    color: whitesmoke;
+    font-size: 16px;
+}
+div form button:hover{
+    background-color: whitesmoke ;
+    color:  rgb(228, 69, 69);
+    cursor: pointer;
+}
+div img{
+    position: absolute;
+    right: 30px;
+    top: 0px;
+}
+
+.my-task{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    bottom: 30px;
+    background-color:burlywood;
+    /* z-index: -2; */
+}
+
+.task-list
+{
+    margin-top: 20px;
+}
+.task-list li
+{
+    padding: 10px 20px 2px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+.task-list li::before
+{
+        content: "";
+        background-image: url("https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png");
+        height: 18px;
+        width: 18px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        position: absolute;
+        left: -6px;
+        top: 8px;     
+}
+.task-list li.checked {
+    color: grey;
+    text-decoration: line-through;
+  }
+  
+  .task-list li.checked::before {
+    background-image: url("https://png.pngtree.com/png-vector/20191113/ourmid/pngtree-green-check-mark-icon-flat-style-png-image_1986021.jpg");
+    height: 20px;
+    width: 20px;
+  }
+  span {
+    position: absolute;
+    right: 85px;
+  }
+
